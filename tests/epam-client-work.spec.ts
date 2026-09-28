@@ -18,5 +18,7 @@ test('navigates to EPAM Client Work', async ({ page }) => {
   await expect(clientWorkLink).toBeVisible();
   await clientWorkLink.click();
 
-  await expect(page.getByRole('heading', { name: 'Client Work', exact: true })).toBeVisible();
+  await expect(
+    page.getByRole('heading', { name: 'Client Work', exact: true }),
+  ).toBeVisible();
 });
